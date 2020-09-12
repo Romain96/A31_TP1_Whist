@@ -1,7 +1,7 @@
 # A31 - TP1 - Jeu de Whist
 
 Auteur : Romain PERRIN - Ingénieur de recherche - Cancéropôle Est / ICube équipe SDS (romain.perrin@etu.unistra.fr)\
-Module : A31 - Programmation et Conception Objet Avancées - IUT Robet SCHUMAN
+Module : DUT S3 - A31 - Programmation et Conception Objet Avancées - IUT Robert SCHUMAN - 2020/21
 
 ## Description
 
