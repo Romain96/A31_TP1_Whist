@@ -11,20 +11,20 @@ Le Whist se joue à **4** joueurs en **2** équipes croisées de deux joueurs.\
 Il se joue avec **un** paquet de **52** cartes.\
 Le paquet contient **4** couleurs : *trèfle*, *coeur*, *carreau* et *pique*.\
 L'ordre décroissant des cartes pour chaque couleur est : *As*, *Roi*, *Dame*, *Valet*, *10*, *9*, *8*, *7*, *6*, *5*, *4*, *3*, *2*.\
-Les cartes sont distribuées dans le sens **horaire**.\
+Les cartes sont distribuées dans le sens **horaire**.
 
 ### Distribution des cartes
 
 L'un des joueurs est le *distributeur* et il distribue *13* cartes une par une à chaque joueur suivant le sens **horaire**.\
 Il retourne la **52e carte** qui lui appartient (il commence par le joueur à sa gauche et termine par lui).
 Cette carte devient **l'atout** pour le tour en cours qui est appelé une **levée**.\
-Chaque joueur à tour de rôle pose une carte.\
+Chaque joueur à tour de rôle pose une carte.
 
 ### Première levée (premier tour de table)
 
 Le joueur doit obligatoirement poser une carte de la **couleur** de l'**atout** sauf s'il ne dispose d'aucune carte de cette couleur.\n
 Il a alors le doit de poser **n'importe** quelle carte indépendamment de son rang et de sa couleur.\
-Les joueurs ne sont pas obligés de jouer une carte gagnante (il peuvent donc jouer une carte inférieure à celles actuellement posées).\
+Les joueurs ne sont pas obligés de jouer une carte gagnante (il peuvent donc jouer une carte inférieure à celles actuellement posées).
 
 ### Déroulement du jeu
 
@@ -33,12 +33,12 @@ S'il n'y a **aucun atout** posé (As, Roi, Dame, Valet) alors le gagnant est cel
 Sinon c'est celui ayant posé **l'atout de rang le plus élevé** indépendamment de la couleur qui remporte la levée.\
 Le paquet de **4** cartes qui viennent d'être jouées est appelé un **pli** et il est remporté par **l'équipe du joueur gagnant**.\
 Pour la levée suivante, c'est le **joueur ayant gagné la dernière levée** qui pose une carte en premier (atout de la levée).\
-Les manches suivantes se déroulent toujours selon le même principe (premier à jouer = gagnant précédent, sens de jeu = sens horaire).\
+Les manches suivantes se déroulent toujours selon le même principe (premier à jouer = gagnant précédent, sens de jeu = sens horaire).
 
 ### Vainqueur(s)
 
 En fin de partie (après la 13e levée) on définit l'équipe gagnante en comptant les points.\
-Chaque **pli** gagné fait remporter **1 point** à son équipe; les **6 premiers plis** ne comptent pas.\
+Chaque **pli** gagné fait remporter **1 point** à son équipe; les **6 premiers plis** ne comptent pas.
 
 
 ## Note diverses
