@@ -56,3 +56,17 @@ Le code est séparé en **3 packages** :
 Les écouteurs (écoutent les boutons *distribuer une carte* et *jouer une carte*) sont implmentés en utilisant une classe externe à la classe de l'interface joueur etou distributeur.\
 Les classes contenant l'inplmentation des écouteurs sont **SignalDistribuerCarte** et **SignalJouerCrate**.\
 Ces objets ont besoin de connaître à la fois l'instance de l'interface dans laquelle ils écoutent un composant spécifique (JButton en l'occurence) mais aussi un objet de type **GestionnairePartie** qui fait office de contrôleur principal (gestion de la partie, des levées etc).
+
+Les cheminements des deux signaux sont expliqués ci-dessous :
+
+#### Distribuer une carte
+
+Lorsque l'utilisateur appuie sur le bouton *Distribuer une carte*, l'écouteur associé qui est une instance de la classe **SignalDistribuerCarte** réceptionne l'événement et appelle la méthode *distribuerCarte* de la classe **GestionnairePartie**. Celui-ci appelle (entre autre) la méthode *distribuerCarte* de la classe **Partie**. Cette même méthode du gestionnaire demande ensuite de mettre à jour les données transmises aux interfaces des joueurs. Le label contenenant les cartes du joueur ayant reçu une carte est mis à jour.
+
+#### Jouer une carte
+
+Loresque l'utilisateur appuie sur le bouton *Jouer une carte*, l'écouteur associé qui est une instance de la classe **SignalJouerCarte** réceptionne l'événement et appelle la méthode *jouerCarte* de la classe **GestionnairePartie**. Celui-ci appelle (entre autre) la méthode *jouerCarte* de la classe **Joueur** sur le joueur concerné mais aussi la méthode *ajouterCarte* de la classe **Pli**. Cette même méthode du gestionnaire demande ensuite de mettre à jour les données transmises aux interfaces des joueurs. Le label de contenant les cartes de la levée en cours est mis à jour pour tous les joueurs.
+
+#### Principe
+
+La requête est déclenchée par l'action de presser un des boutons d'une des interfaces utilisateurs c'est-à-dire dans la partie **Vue**. Elle est traitée par le gestionnaire dans la partie **Controleur** qui a accès aux données du **modèle**. Les vues ne  stockent aucune informations du modèle et ne peuvent directment les modifier.
