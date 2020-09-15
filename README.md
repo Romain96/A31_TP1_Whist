@@ -22,7 +22,7 @@ Chaque joueur à tour de rôle pose une carte.
 
 ### Première levée (premier tour de table)
 
-Le joueur doit obligatoirement poser une carte de la **couleur** de l'**atout** sauf s'il ne dispose d'aucune carte de cette couleur.\n
+Le joueur doit obligatoirement poser une carte de la **couleur** de l'**atout** sauf s'il ne dispose d'aucune carte de cette couleur.\
 Il a alors le doit de poser **n'importe** quelle carte indépendamment de son rang et de sa couleur.\
 Les joueurs ne sont pas obligés de jouer une carte gagnante (il peuvent donc jouer une carte inférieure à celles actuellement posées).
 
@@ -49,3 +49,10 @@ Le code est séparé en **3 packages** :
 * *WhistModel* - contient les classes du projet (Joueur, Carte, Pli...)
 * *WhistView* - contient les vues (interfaces graphiques)
 * *WhistControler* - contient le gestionnaire de partie et la gestion des signaux (boutons)
+
+
+### Gestion des écouteurs
+
+Les écouteurs (écoutent les boutons *distribuer une carte* et *jouer une carte*) sont implmentés en utilisant une classe externe à la classe de l'interface joueur etou distributeur.\
+Les classes contenant l'inplmentation des écouteurs sont **SignalDistribuerCarte** et **SignalJouerCrate**.\
+Ces objets ont besoin de connaître à la fois l'instance de l'interface dans laquelle ils écoutent un composant spécifique (JButton en l'occurence) mais aussi un objet de type **GestionnairePartie** qui fait office de contrôleur principal (gestion de la partie, des levées etc).
